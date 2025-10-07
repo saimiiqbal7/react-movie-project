@@ -8,7 +8,7 @@ export default function MovieCard({movie}){
     return (
         <div className="movie-card">
             <div className="movie-poster">
-                <img src={movie.url} alt={movie.title}/>
+                <img src="{movie.url}" alt={movie.name}/>
                 <div className="">
                     <button className="favorite-btn" onClick={onFavorite}>♥︎</button>
                 </div>
@@ -16,7 +16,7 @@ export default function MovieCard({movie}){
             </div>
 
             <div className="movie-info">
-                <h3>{movie.title}</h3>
+                <h3>{movie.name}</h3>
                 <p>{movie.releaseDate}</p>
             </div>
             
